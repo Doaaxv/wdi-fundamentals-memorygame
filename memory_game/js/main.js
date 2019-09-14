@@ -30,7 +30,6 @@ function checkForMatch(){
 function flipCard(){
 
 var cardId = this.getAttribute('data-id');
-console.log("cardId is: "+cards[cardId].cardImage);
 
  this.setAttribute('src',cards[cardId].cardImage);
 
