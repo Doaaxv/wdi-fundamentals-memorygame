@@ -1,6 +1,3 @@
-console.log("Up and running!");
-
-
 var cards = [
 {
 	rank: "queen",
@@ -37,11 +34,6 @@ console.log("cardId is: "+cards[cardId].cardImage);
 
  this.setAttribute('src',cards[cardId].cardImage);
 
-
-/*
-console.log("User flipped "+cards[cardId].rank);
-console.log("User flipped "+cards[cardId].suit);
-console.log("User flipped "+cards[cardId].cardImage);*/
 cardsInPlay.push(cards[cardId].rank);
 
 if(cardsInPlay.length === 2){
@@ -52,7 +44,6 @@ if(cardsInPlay.length === 2){
 
 function createBoard(){
 	for (var i = 0; i < cards.length; i++) {
-    // Logic here
     var cardElement = document.createElement('img');
     cardElement.setAttribute('src','images/back.png');
     cardElement.setAttribute('data-id',i);
